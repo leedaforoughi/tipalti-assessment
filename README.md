@@ -1,6 +1,6 @@
 ## Tipalti Frontend Assessment 
 
-This project is a submission for Tipalti’s Frontend Takehome Assessment. It is built using the provided Tipalti React Starter Template.
+This is a submission for the Tipalti Frontend Takehome Assessment. It is built using the provided Tipalti React Starter Template.
 
 ### Added/Updated Files
 
