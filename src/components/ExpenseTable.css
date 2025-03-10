@@ -18,7 +18,7 @@
   }
   
   .expense-table th {
-    background-color: #f7f7f7; /* Keep the header background light gray */
+    background-color: #f7f7f7; 
     font-weight: bold;
     padding: 12px 15px;
     border: 1px solid #ddd;
@@ -27,14 +27,11 @@
   }
   
   .expense-table td {
-    background-color: white; /* ✅ Make all rows white */
+    background-color: white; 
     padding: 12px 15px;
     border: 1px solid #ddd;
     text-align: left;
     font-size: 1rem;
   }
   
-  .expense-table tbody tr:hover {
-    background-color: #f1f1f1; /* ✅ Add a hover effect */
-  }
   
