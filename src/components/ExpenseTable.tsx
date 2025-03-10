@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { fetchExpenses, Expense } from "../services/api";
 import "./ExpenseTable.css";
 
-// 🕑 Format the date as "08:03 - 16/10/2024"
 const formatDate = (isoString: string) => {
   const date = new Date(isoString);
   const time = date.toLocaleTimeString("en-GB", {
@@ -16,7 +15,7 @@ const formatDate = (isoString: string) => {
   return `${time} - ${day}/${month}/${year}`;
 };
 
-// 🔠 Capitalize the first letter of the category
+
 const capitalizeFirstLetter = (text: string) => {
   return text.charAt(0).toUpperCase() + text.slice(1);
 };
@@ -30,7 +29,7 @@ const ExpenseTable: React.FC = () => {
     const loadExpenses = async () => {
       try {
         const data = await fetchExpenses();
-        setExpenses(data.slice(0, 20)); // ✅ Show first 20 entries
+        setExpenses(data.slice(0, 20)); 
       } catch (err) {
         setError("Failed to load expenses.");
       } finally {
@@ -46,13 +45,13 @@ const ExpenseTable: React.FC = () => {
 
   return (
     <div className="expense-container">
-      <h2 className="title">Expenses</h2> {/* ✅ Centered title */}
+      <h2 className="title">Expenses</h2> 
       <table className="expense-table">
         <thead>
           <tr>
             <th>ID</th>
             <th>Date</th>
-            <th>Amount</th> {/* ✅ Changed to £ */}
+            <th>Amount</th> 
             <th>Merchant</th>
             <th>Category</th>
           </tr>
@@ -62,9 +61,9 @@ const ExpenseTable: React.FC = () => {
             <tr key={expense.id}>
               <td>{expense.id}</td>
               <td>{formatDate(expense.date)}</td>
-              <td>£{expense.amount.toFixed(2)}</td> {/* ✅ Changed to £ */}
+              <td>£{expense.amount.toFixed(2)}</td> 
               <td>{expense.merchant}</td>
-              <td>{capitalizeFirstLetter(expense.category)}</td> {/* ✅ Capitalized category */}
+              <td>{capitalizeFirstLetter(expense.category)}</td> 
             </tr>
           ))}
         </tbody>

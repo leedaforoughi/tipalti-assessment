@@ -1,21 +1,25 @@
-## Tipalti React Starter Template
+## Tipalti Frontend Assessment 
 
-This is a simplified React starter template configured using [Vite](https://vitejs.dev/guide/), a build tool that aims to provide a faster and leaner development experience.
+This project is a submission for Tipalti’s Frontend Takehome Assessment. It is built using the provided Tipalti React Starter Template.
 
-It has minimal dependencies and configuration to allow for easy installation and to allow the candidate to make their own decisions about styling, external libraries and other tooling.
+I have added  the following files:
 
-You are free to make changes to the template but please be aware that those reviewing your work will need to be able to install and run it locally without difficulty.
+src/components/ExpenseTable.tsx - Fetches and displays the first 20 transactions in a table.
+
+src/components/ExpenseTable.css - Styles the table to match the provided table.
+
+src/services/api.ts - Handles API calls to fetch transactions.
 
 ---
 
-## Usage
-
-To use the repository for your challenge submission, please clone the repository and create a new repository on your own Github account . Please DO NOT try to push branches, make pull requests  or fork the original source template repository.
-
 ### Installation
+To install dependencies and start the project, run the following commands from the root folder:
 
-From the root folder, run `npm install` to install all required dependencies.
+`npm install` # Install dependencies
 
-### Running Locally
+`npm run dev` # Start the development server
 
-From the root folder, run `npm run dev` to run a local server with hot reloading.
+The application will be available at http://localhost:5173/.
+
+---
+Leeda Foroughi

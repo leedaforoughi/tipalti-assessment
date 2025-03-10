@@ -1,5 +1,4 @@
-import ExpenseTable from "./components/ExpenseTable"; // Ensure the import path is correct
-
+import ExpenseTable from "./components/ExpenseTable"; 
 
 function App() {
   return (
